@@ -1,0 +1,86 @@
+{
+	"topics": [
+		{
+			"title": "Food",
+			"description": "Тема «Еда» (Food) включает в себя очень много слов и список можно продолжать до бесконечности. Для тех, кто только что присоединился к нам, вот список слов для начинающих по теме «Food».  Дополнительно предлагаются упражнения и тексты по теме «Food».",
+			"words": [
+				{
+					"word": "bacon",
+					"translate": "ветчина",
+					"isLearned": false
+				},
+				{
+					"word": "sausages",
+					"translate": "сосиски",
+					"isLearned": false
+				},
+				{
+					"word": "semolina",
+					"translate": "Манная каша",
+					"isLearned": false
+				},
+				{
+					"word": "pancakes",
+					"translate": "блины",
+					"isLearned": false
+				},
+				{
+					"word": "biscuits",
+					"translate": "печенье",
+					"isLearned": false
+				},
+				{
+					"word": "porridge",
+					"translate": "каша",
+					"isLearned": false
+				}
+			]
+		},
+		{
+			"title": "Feelings and Mood",
+			"description": "Мы все испытываем чувства и эмоции и совершаем поступки под их воздействием. Мы страдаем, удивляемся, радуемся или беспокоимся. Наши чувства — это наше состояние, поэтому говоря о чувствах на английском языке, мы всегда используем страдательное причастие (ED- adjective).",
+			"words": [
+				{
+					"word": "glad",
+					"translate": "радостный",
+					"isLearned": false
+				},
+				{
+					"word": "bored",
+					"translate": "скучающий",
+					"isLearned": false
+				},
+				{
+					"word": "tired",
+					"translate": "уставший",
+					"isLearned": false
+				},
+				{
+					"word": "scared",
+					"translate": "испуганный",
+					"isLearned": false
+				},
+				{
+					"word": "worried",
+					"translate": "обеспокоенный",
+					"isLearned": false
+				},
+				{
+					"word": "puzzled",
+					"translate": "озадаченный",
+					"isLearned": false
+				},
+				{
+					"word": "interested",
+					"translate": "заинтересованный",
+					"isLearned": false
+				},
+				{
+					"word": "angry",
+					"translate": "сердитый",
+					"isLearned": false
+				}
+			]
+		}
+	]
+}
