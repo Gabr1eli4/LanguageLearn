@@ -1,4 +1,5 @@
 from random import randint
+from fileRead import readJson, writeJson
 
 def check_message(data: dict, message: str) -> bool:
 	return "message" in data and "text" in data["message"] and data["message"]["text"] == message
@@ -17,5 +18,10 @@ def generate_test(words):
 	return buttons
 
 
-def callback_query_answer():
-	pass
+def get_word(words):
+	index = randint(0, len(words) - 1)
+	word = words[index]["word"]
+	userSettings = readJson("settings/userSettings.json")
+	userSettings["currentWord"] = word
+	writeJson("settings/userSettings.json", userSettings)
+	return word
