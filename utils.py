@@ -21,7 +21,18 @@ def generate_test(words):
 def get_word(words):
 	index = randint(0, len(words) - 1)
 	word = words[index]["word"]
-	userSettings = readJson("settings/userSettings.json")
+	translate = words[index]["translate"]
+
+	print("word = ", word)
+	print("translate = ", translate)
+
+	userSettings = get_user_settings()
 	userSettings["currentWord"] = word
+	userSettings["currentTranslate"] = translate
 	writeJson("settings/userSettings.json", userSettings)
 	return word
+
+
+def get_user_settings():
+	return readJson("settings/userSettings.json")
+	

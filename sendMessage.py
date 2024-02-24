@@ -25,3 +25,10 @@ def send_inline_keyboard(chat_id, buttons, text):
 	data = { "chat_id": chat_id, "text": text, "reply_markup": inline_keyboard }
 
 	requests.post(url, json=data)
+
+
+def answer_callback_query(callback_id):
+	answerMethod = "answerCallbackQuery"
+	url = f"{TELEGRAM_API}/{answerMethod}"
+	data = { "callback_query_id": callback_id }
+	requests.post(url, json=data)

@@ -1,6 +1,7 @@
 from sendMessage import send_keyboard, send_inline_keyboard, send_message
 from fileRead import get_words_of_topic
 from utils import generate_test, get_word
+from random import randint
 
 
 completedQuestions = 0
@@ -23,15 +24,11 @@ def test_start_handler(chat_id, topics):
 	send_keyboard(chat_id, buttons, "Выберите тему")
 
 
-def answer_handler(chat_id, topics, topicTitle, answer, currentWord):
-	message = ""
-	if (answer == currentWord):
-		message = "Верно!!!"
-	else:
-		message = "Сори, не в этот раз"
+def answer_handler(chat_id, topics, topicTitle):
 	words = get_words_of_topic(topics, topicTitle)
 	buttons = generate_test(words)
-	send_inline_keyboard(chat_id, buttons, message)
+	newWord = get_word(words)
+	send_inline_keyboard(chat_id, buttons, newWord)
 
 
 def topic_handler(chat_id, data, topics, choosenTopic):
