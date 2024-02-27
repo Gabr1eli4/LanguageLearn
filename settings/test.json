@@ -6,32 +6,38 @@
 				{
 					"word": "bacon",
 					"translate": "ветчина",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "sausages",
 					"translate": "сосиски",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "semoline",
 					"translate": "Манная каша",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "pancakes",
 					"translate": "блины",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "biscuits",
 					"translate": "печенье",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "porridge",
 					"translate": "каша",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				}
 			]
 		},
@@ -41,42 +47,50 @@
 				{
 					"word": "glad",
 					"translate": "радостный",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "bored",
 					"translate": "скучающий",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "tired",
 					"translate": "уставший",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "scared",
 					"translate": "испуганный",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "worried",
 					"translate": "обеспокоенный",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "puzzled",
 					"translate": "озадаченный",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "interested",
 					"translate": "заинтерисованный",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				},
 				{
 					"word": "angry",
 					"translate": "сердитый",
-					"isLearned": false
+					"isLearned": false,
+					"NumOfRightAnswers": 0
 				}
 			]
 		}

@@ -1,5 +1,7 @@
 {
-    "currentWord": "pancakes",
-    "currentTranslate": "\u0431\u043b\u0438\u043d\u044b",
-    "currentTopic": "Food"
+    "currentWord": "",
+    "currentTranslate": "",
+    "currentTopic": "",
+    "topicRightAnswers": 0,
+    "toLearn": 5
 }

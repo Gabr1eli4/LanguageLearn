@@ -1,0 +1,16 @@
+{
+    "topics": [
+        {
+            "topic": "Food",
+            "learnedWords": 0,
+            "numOfWords": 6,
+            "dateOfLastTest": ""
+        },
+        {
+            "topic": "Feelings and Mood",
+            "learnedWords": 0,
+            "numOfWords": 8,
+            "dateOfLastTest": ""
+        }
+    ]
+}
