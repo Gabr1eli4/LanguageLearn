@@ -49,7 +49,15 @@ def topic_handler(chat_id, data, topics, choosenTopic):
 
 
 def statistic_handler(chat_id):
-	send_message(chat_id, "Ну вот тебе статистика")
+	data = readJson("settings/statistics.json")
+	topics = data["topics"]
+	message = ""
+	for topic in topics:
+		message = message + "Тема - " + topic["topic"] + "\n"
+		message = message + "Количество выученных слов - " + str(topic["learnedWords"]) + "\n"
+		message = message + "Всего слов в тесте - " + str(topic["numOfWords"]) + "\n"
+		message = message + "Дата последнего прохождения теста - " + topic["dateOfLastTest"] + "\n\n"
+	send_message(chat_id, message)
 
 
 def settings_handler(chat_id):

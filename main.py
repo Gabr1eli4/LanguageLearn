@@ -1,5 +1,5 @@
 from flask import Flask, request
-from utils import check_message, get_user_settings, clearUserSettings, clearStatistics
+from utils import check_message, get_user_settings, clearUserSettings, clearStatistics, setStatisticsDate, clearUserSettings
 from handlers import start_handler, test_start_handler, topic_handler, statistic_handler, settings_handler, answer_handler
 from fileRead import readJson, writeJson, get_words_of_topic
 from sendMessage import answer_callback_query, send_message
@@ -28,6 +28,7 @@ def start():
 
 	# Начать теста
 	if check_message(data, "Начать тест"):
+		clearUserSettings()
 		test_start_handler(chat_id, topics)
 		return '', 200
 
@@ -43,6 +44,7 @@ def start():
 		userSettings["currentTopic"] = currentTopic
 		writeJson("settings/userSettings.json", userSettings)
 		topic_handler(chat_id, data, topics, currentTopic)
+		setStatisticsDate(currentTopic)
 		return '', 200
 
 	# Проверка теста

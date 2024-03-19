@@ -1,3 +1,4 @@
+from datetime import datetime
 from random import choice
 from fileRead import readJson, writeJson
 index = 0
@@ -67,3 +68,21 @@ def clearStatistics():
 	for topic in stats["topics"]:
 		topic["learnedWords"] = 0
 	writeJson("settings/statistics.json", stats)
+
+def setStatisticsDate(currentTopic):
+	data = readJson("settings/statistics.json")
+	for topic in data["topics"]:
+		if topic["topic"] == currentTopic:
+			topic["dateOfLastTest"] = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+	print("stats = ", data)
+	writeJson("settings/statistics.json", data)
+
+
+def clearUserSettings():
+	userSettings = get_user_settings()
+	userSettings["currentTopic"] = ""
+	userSettings["currentWord"] = ""
+	userSettings["currentTranslate"] = ""
+	userSettings["topicRightAnswers"] = 0
+	print("userSettings = ", userSettings)
+	writeJson("settings/userSettings.json", userSettings)

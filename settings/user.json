@@ -1,0 +1,18 @@
+{
+	"settings": {
+		"numberOfWordsInTest": 4,
+		"numberOfWordsToLearn": 5
+	},
+	"statistics": {
+		"topics": {
+			"title": "",
+			"learnedWords": [
+				{
+					"word": "",
+					"translate": ""
+				}
+			],
+			"lastTime": ""
+		}
+	}
+}
